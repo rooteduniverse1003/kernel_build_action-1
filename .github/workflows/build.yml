@@ -1,5 +1,5 @@
 
-          kernel-branch: main# A simple action usage
+
 name: Build Kernel
 on:
   workflow_dispatch:
@@ -13,8 +13,8 @@ jobs:
       contents: read
 
     steps:
-    - name: Build Kernel
-      uses: dabao1955/kernel_build_action@main
+    - name: Android Kernel Build Action
+      uses: dabao1955/kernel_build_action@v1.6.1
       with:
           kernel-url: https://github.com/rooteduniverse1003/TCL-30-V-5G--T781SPP--Android-11-kernel-5.4-QGKI-source-code
           kernel-branch: main
