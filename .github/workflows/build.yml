@@ -1,4 +1,4 @@
-
+8
 
 name: Build Kernel
 on:
@@ -16,9 +16,9 @@ jobs:
     - name: Android Kernel Build Action
       uses: dabao1955/kernel_build_action@v1.6.1
       with:
-          kernel-url: https://github.com/rooteduniverse1003/TCL-30-V-5G--T781SPP--Android-11-kernel-5.4-QGKI-source-code
-          kernel-branch: main
-          config: irvinevzw-qgki_defconfig
+          kernel-url: https://github.com/MotorolaMobilityLLC/kernel-mtk/tree/android-11-release-rrh
+          kernel-branch: android-11-release-rrh
+          config: k65v1_64_bsp_debug_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
@@ -30,4 +30,3 @@ jobs:
           disable-lto: true
           anykernel3: true
           kvm: true
-          
